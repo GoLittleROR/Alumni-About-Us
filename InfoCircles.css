@@ -1,0 +1,244 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(182, 208, 197);
+}
+
+.text-container {
+  position: absolute;
+  left: 5%;
+  top: 40%;
+  width: 35%;
+  color: white;
+  text-align: left;
+}
+
+.highlight{
+  font-family: "Poppins", sans-serif;
+  /* font-weight: 500; */
+  font-size: 46px;
+  color: #254336;
+  /* background: linear-gradient(45deg, #4f29cd, #b95ce4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
+  font-style: normal;
+}
+
+/* .text-container h2 {
+  font-size: 24px;
+  color: #254336;
+  font-weight: bold;
+} */
+
+.text-container h1 {
+  font-size: 40px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.text-container p {
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 20px;
+}
+
+/* Buttons Styling */
+.buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.order-btn, .contact-btn {
+  padding: 12px 24px;
+  font-size: 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.order-btn {
+  background: linear-gradient(45deg,#4f29cd, #b95ce4);
+  color: whitesmoke;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.contact-btn {
+  background: none;
+  border: 2px solid white;
+  color: white;
+}
+
+.order-btn:hover {
+  background: #ffcc66 !important; /* Override gradient */
+  color: black;
+}
+
+.contact-btn:hover {
+  background: white;
+  color: #4a2c2c;
+}
+
+.circle {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 1px ;
+  text-align: center;
+  padding: 50px;
+  /* opacity: 0.85;  */
+}
+
+h2 {
+  margin-bottom: 10px;
+  position: relative;
+  text-align: left;
+  padding-bottom: 8px; /* Space between text and line */
+}
+
+.UnderLine::after {
+  content: "";
+  display: block;
+  width: 50%; /* Adjust the line width */
+  height: 3px; /* Thickness of the line */
+  background-color: currentColor; /* Matches the text color */
+  margin-left: 38px;
+  margin-top: 7px;
+}
+
+/* Mission Statement (Largest - Back Layer) */
+.black {
+  width: 420px;
+  height: 420px;
+  background-color: #2d2020;
+  color: rgb(217, 162, 142);
+  z-index: 1;
+  top: 62%;
+  left: 60%;
+  text-align: left;
+  transform: translate(-50%, -50%);
+}
+
+.black:hover{
+  width: 440px;
+  height: 440px;
+  background-color: #C39898;
+  color: #ffff;
+  z-index: 1;
+  top: 62%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  text-align: left;
+  font-size: 18px;
+  transition: 0.8s;
+}
+
+/* History of Alumni Association (Middle Layer - Slightly Northwest) */
+.pink {
+  width: 300px;
+  height: 300px;
+  background-color: rgba(210, 159, 137, 0.85);
+  color: rgb(251, 241, 225);
+  z-index: 2;
+  top: 35%;
+  left: 79%;
+  transform: translate(-50%, -50%);
+  text-align: right;
+  font-size: 16px;
+}
+
+.pink h2{
+  text-align: center;
+}
+
+.pink h2::after {
+  content: "";
+  display: block;
+  width: 50%; /* Adjust the line width */
+  height: 3px; /* Thickness of the line */
+  background-color: currentColor; /* Matches the text color */
+  margin-left: 95px;
+  margin-top: 7px;
+}
+
+.pink:hover{
+  width: 340px;
+  height: 340px;
+  background-color: rgba(185, 92, 228,0.85);
+  /* background: linear-gradient(45deg,#4f29cd, #b95ce4); */
+  color: white;
+  z-index: 8;
+  top: 35%;
+  left: 79%;
+  transform: translate(-50%, -50%);
+  transition: 0.8s;
+  text-align: left;
+  font-size: 19px;
+}
+
+/* Vision Statement (Smaller - Slightly North) */
+.white {
+  width: 220px;
+  height: 220px;
+  background-color: rgba(233, 234, 226,0.85);
+  color: rgb(245, 140, 98);
+  z-index: 3;
+  top: 29%;
+  left: 62%;
+  transform: translate(-50%, -50%);
+  text-align: left;
+}
+
+.white:hover{
+  width: 250px;
+  height: 250px;
+  background: rgba(221, 136, 207, 0.90);
+  color: #FBE4D6;
+  z-index: 3;
+  top: 29%;
+  left: 62%;
+  transform: translate(-50%, -50%);
+  font-size: 16px;
+  text-align: left;
+  font-size: 17px;
+  transition: 0.8s;
+}
+
+/* Core Values (Smallest - Slightly Southwest) */
+.gray {
+  width: 200px;
+  height: 200px;
+  background-color: rgba(128, 128, 128, 0.85);
+  color: rgb(233, 231, 232);
+  z-index: 4;
+  top: 73%;
+  left: 81%;
+  transform: translate(-50%, -50%);
+}
+
+.gray:hover{
+  width: 250px;
+  height: 250px;
+  background-color: rgba(88, 149, 246, 0.85);
+  color: rgb(233, 231, 232);
+  z-index: 5;
+  top: 73%;
+  left: 81%;
+  transform: translate(-50%, -50%);
+  transition: 0.8s;
+}
