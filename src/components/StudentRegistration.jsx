@@ -140,20 +140,9 @@ const StudentRegistration = () => {
             Instagram URL
           </label>
         </div>
-        <div className="address">
-          <label htmlFor="profession" id="Address">
-            Profession
-          </label>
-          <input
-            type="text"
-            name="profession"
-            id="profession"
-            placeholder="Enter your Profession"
-          />
-        </div>
         <div className="buttons">
-          <button>Submmit</button>
-          <button>Cancle</button>
+          <button>Submit</button>
+          <button>Cancel</button>
         </div>
       </div>
     </div>

@@ -170,8 +170,8 @@ const AlumniRegistration = () => {
           />
         </div>
         <div className="buttons">
-          <button>Submmit</button>
-          <button>Cancle</button>
+          <button>Submit</button>
+          <button>Cancel</button>
         </div>
       </div>
     </div>

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./App.css";
-// import AlumniRepresentativeRegistration from "./components/AlumniRepresentative";
-// import AlumniRegistration from "./components/AlumniRegistration";
+import AlumniRepresentativeRegistration from "./components/AlumniRepresentative";
+import AlumniRegistration from "./components/AlumniRegistration";
 import StudentRegistration from "./components/StudentRegistration";
 
 function App() {
@@ -9,9 +9,9 @@ function App() {
 
   return (
     <>
-      {/* <AlumniRepresentativeRegistration /> */}
-      {/* <AlumnisRegistration/> */}
-      <StudentRegistration />
+      <AlumniRepresentativeRegistration />
+      {/* <AlumniRegistration /> */}
+      {/* <StudentRegistration /> */}
     </>
   );
 }
