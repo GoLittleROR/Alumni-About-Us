@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(204, 204, 252);
+  height: 100%;
+  width: 100%;
+}
+
+.container {
+  display: flex;
+}
+
+.student-container {
+  margin-top: 70px;
+  margin-left: 370px;
+  width: 70%;
+  min-height: 100vh;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.logo-light {
+  font-family: 'Inter', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+  color: rgb(129, 129, 253);
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.student-container h2 {
+  padding: 20px 30px;
+  font-family: 'Inter', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  color: rgb(112, 111, 111);
+}

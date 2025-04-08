@@ -1,0 +1,27 @@
+/* Reset some browser defaults but keep compatibility with your existing styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+  background-color: rgb(204, 204, 252);
+  min-height: 100vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove the default styles that would conflict with your design */
+button {
+  cursor: pointer;
+}
+
+/* Override any dark mode preferences to ensure consistent light theme */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: rgb(204, 204, 252);
+  }
+}

@@ -1,0 +1,39 @@
+.table-container {
+  background-color: white;
+  margin: 0 auto;
+  font-family: 'Inter', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  padding: 24px;
+}
+
+.student-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+  color: #334155;
+}
+
+.student-table th,
+.student-table td {
+  padding: 16px;
+  text-align: left;
+  font-weight: 500;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.table-header th {
+  color: #475569;
+  font-weight: 600;
+  font-size: 14px;
+  background-color: #deeaf6;
+}
+
+.student-table tr:hover {
+  background-color: #f1f5f9;
+  cursor: pointer;
+}

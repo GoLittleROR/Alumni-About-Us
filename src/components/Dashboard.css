@@ -1,0 +1,30 @@
+.dashboard {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.total-std {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.total-std h1 {
+  color: grey;
+  font-family: 'Inter', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+}
+
+.total-std h2 {
+  margin: 10px 0;
+  padding: 0;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.total-std:hover h1 {
+  color: #ff7e5f;
+}
