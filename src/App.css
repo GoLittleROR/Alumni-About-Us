@@ -1,0 +1,6 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom, #FFFAE3, #FFD1DC, #12b6f1);
+  overflow-x: hidden;
+}

@@ -1,0 +1,203 @@
+.header-image {
+  width: 100vw;
+  height: 350px;
+  background-color: transparent;
+  overflow: visible;
+  position: relative;
+  top: 0;
+  left: 0;
+  box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header-image img {
+  width: 100%;
+  height: 700px;
+  border-radius: 50%;
+  object-fit: cover;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  top: 0;
+  border: 1px solid purple;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.header-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 2.7em;
+  font-weight: 300;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 5px;
+  line-height: 2px;
+  text-transform: uppercase;
+}
+
+.search-bar {
+  position: absolute;
+  bottom: -60px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: transparent;
+  border-radius: 50px;
+  border: 2px solid #12b6f1;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 10px;
+  height: 52px;
+  width: 90%;
+  max-width: 1200px;
+}
+
+.search-bar input {
+  width: 400px;
+}
+
+.search-bar input,
+.search-bar select {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  font-size: 16px;
+  background-color: transparent;
+  color: rgb(52, 51, 51);
+  font-weight: 500;
+}
+
+.search-bar select {
+  width: 200px;
+}
+
+.search-bar input::placeholder {
+  color: #333;
+}
+
+.search-bar button {
+  background-color: #12b6f1;
+  border: 1px solid #12b6f1;
+  border-radius: 50px;
+  height: 52px;
+  width: 85px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 50px;
+  position: absolute;
+  right: 0;
+}
+
+.search-bar button i {
+  font-size: 18px;
+  color: white;
+}
+
+.alumni-container {
+  margin-top: 10px;
+  padding: 20px;
+  font-family: "Poppins", sans-serif;
+  height: 400%;
+  width: 100vw;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.alumniInfo {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  justify-items: center;
+  padding: 40px;
+  margin-top: 80px; 
+}
+
+@media (max-width: 1024px) {
+  .alumniInfo {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .alumniInfo {
+    grid-template-columns: 1fr;
+  }
+}
+
+.alumni-card {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 260px;
+  background-color: rgb(219, 147, 219);
+  border-radius: 15px;
+  height: 336px; 
+  overflow: hidden; 
+  border: 2px solid #52135a;
+}
+
+.image{
+  display: flex;
+  justify-content: center;
+  /* padding-top: 20px; */
+  background-color: purple;
+  height: 120px;
+  justify-content: center;
+}
+
+.alumni-card .image img {
+  display: flex;
+  padding: 8px;
+}
+
+.image img {
+  height: 100px;  /* Slightly smaller image */
+  width: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.alumni-details{
+  background-color: #fff;
+  height: 210px;
+  padding-top: 16px;
+}
+
+.alumni-details p {
+  margin-top: 16px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #fff;
+  text-align: center;
+  line-height: 16px;
+  /* font-weight: 600; */
+  font-size: 16px;
+}
+
+.alumni-media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 58px;
+  gap: 20px;
+  font-size: 24px;
+  border-radius: 0 0 15px 15px;
+  /* margin-top: 10px; */
+  background-color: rgb(178, 249, 72);
+}
+
+.alumni-media i {
+  cursor: pointer;
+  color: purple;
+}
+
+.alumni-media i:hover{
+  cursor: pointer;
+  color: blue;
+  font-size: 28px;
+}
