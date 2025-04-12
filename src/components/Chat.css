@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.nav-list {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  padding-left: 0px;
+  width: 290px;
+  background-color: rgb(215, 215, 242);
+  height: 100vh;
+  font-family: "Quicksand", sans-serif;
+}
+
+.heading {
+  padding: 30px 20px;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.heading h3 {
+  background: linear-gradient(to right, #f605f6, #42fd74);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.Direct-message p, .groups p {
+  color: gray;
+  font-size: 14px;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+  padding-left: 12px;
+}
+
+.Direct-message ul, .groups ul {
+  list-style: none;
+  width: 290px;
+}
+
+.Direct-message li, .groups li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 30px;
+  font-size: 20px;
+}
+
+.Direct-message li:hover, .groups li:hover {
+  background-color: rgb(86, 251, 86);
+  color: white;
+  cursor: pointer;
+}
+
+span {
+  padding-right: 10px;
+}
+
+.Direct-message li img, .groups li img {
+  height: 24px;
+  width: 24px;
+  border-radius: 50px;
+}
+
+.Direct-message, .groups {
+  padding-top: 20px;
+}
+
+.user-profile {
+  height: 75px;
+  width: calc(100% - 290px);
+  background-color: #5aa4f9;
+  position: fixed;
+  top: 0;
+  left: 290px;
+  z-index: 10;
+  padding: 18px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-family: "Poppins", sans-serif;
+}
+
+.profile-photo {
+  height: 48px;
+  width: 48px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-left: 60px;
+}
+
+.profile-photo img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.user-name h2 {
+  font-family: "Quicksand", sans-serif;
+  font-size: 22px;
+  font-weight: normal;
+  line-height: 22px;
+}
+
+.user-name p {
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.chatting-container {
+  margin-top: 100px;
+  margin-left: 368px;
+  width: 70%;
+  min-height: 82vh;
+  background-image: url('../assets/chatBackground.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #ecafaf;
+  border-radius: 10px;
+  opacity: 0.6;
+  position: relative;
+}
+
+.send-msg {
+  padding: 20px 20px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+}
+
+.send-msg input {
+  width: 90%;
+  height: 36px;
+  border-radius: 10px;
+  border: none;
+  padding: 20px;
+}
+
+button {
+  height: 39px;
+  width: 46px;
+  margin-left: 20px;
+  border-radius: 8px;
+  background-color: rgb(52, 227, 52);
+  color: white;
+  cursor: pointer;
+}
