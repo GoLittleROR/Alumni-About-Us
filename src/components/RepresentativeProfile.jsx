@@ -1,21 +1,21 @@
 import React, { useState } from "react";
-import "./Profile.css";
+import "./AlumniProfile.css";
 import profileImage from "../assets/profile.png"; // You'll need to add your profile image
 
-const AccountSettings = () => {
+const RepresentativeAccountSettings = () => {
   const [activeMenu, setActiveMenu] = useState("Account");
   const [formData, setFormData] = useState({
-    firstName: "Rahul",
+    firstName: "Prof. Rahul",
     lastName: "Sharma",
     email: "rahul92@gmail.com",
     phoneNumber: "+91 123456789",
-    deptname: "CSE",
-    company: "TCS",
-    designation: "UI Developer",
+    address: "Kholapur", // Add default or empty string
+    department: "",
+    year: "TY",
     linkedin: "Rahul Sharma",
     insta: "Rahul23",
     fb: "Rahul Sharma",
-    bio: "Lorem ipsum dolor sit amet consectetur adipiscing elit. Labore vero enim error similique quia nusquam ullam corporis officia odio repellendus aperiam consequatur laudantium porro voluptatibus, neque aliquam vellam voluptatum distinctio!",
+    bio: "...",
     oldPassword: "",
     newPassword: "",
   });
@@ -36,9 +36,12 @@ const AccountSettings = () => {
   const renderAccountContent = () => {
     return (
       <>
-        <h2 className="section-title">Account Settings</h2>
+        {/* <h2 className="section-title">Account Settings</h2> */}
 
         <div className="form-container">
+        <div className="heading-title">
+            <h2 className="section-title">Account Settings / Alumni-Representative</h2>
+          </div>
           <div className="form-row">
             <div className="form-group">
               <label>First Name</label>
@@ -80,11 +83,11 @@ const AccountSettings = () => {
               />
             </div>
             <div className="form-group">
-              <label>Department</label>
+              <label>Address</label>
               <input
                 type="text"
-                name="deptname"
-                value={formData.deptname}
+                name="address"
+                value={formData.address}
                 onChange={handleInputChange}
               />
             </div>
@@ -92,20 +95,11 @@ const AccountSettings = () => {
 
           <div className="form-row">
             <div className="form-group">
-              <label>Company</label>
+              <label>Department</label>
               <input
                 type="text"
-                name="company"
-                value={formData.company}
-                onChange={handleInputChange}
-              />
-            </div>
-            <div className="form-group">
-              <label>Designation</label>
-              <input
-                type="text"
-                name="designation"
-                value={formData.designation}
+                name="department"
+                value={formData.department}
                 onChange={handleInputChange}
               />
             </div>
@@ -218,7 +212,7 @@ const AccountSettings = () => {
             <div className="profile-image">
               <img src={profileImage} alt="Profile" />
             </div>
-            <h3 className="profile-name">Rahul Sharma</h3>
+            <h3 className="profile-name">Prof. Rahul Sharma</h3>
           </div>
 
           <div className="menu-items">
@@ -252,4 +246,4 @@ const AccountSettings = () => {
   );
 };
 
-export default AccountSettings;
+export default RepresentativeAccountSettings;

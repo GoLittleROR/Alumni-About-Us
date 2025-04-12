@@ -1,11 +1,15 @@
-import AccountSettings from "./components/Profile";
+// import AlumniaccountSettings from "./components/AlumniProfile";
+import RepresentativeAccountSettings from "./components/RepresentativeProfile";
+// import StudentAccountSettings from "./components/StudentProfile";
 // import './App.css'
 
 function App() {
   return (
     <>
       <div className="App">
-        <AccountSettings/>
+        {/* <AlumniaccountSettings /> */}
+        {/* <StudentAccountSettings /> */}
+        <RepresentativeAccountSettings />
       </div>
     </>
   );
